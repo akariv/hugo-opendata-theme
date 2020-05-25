@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h2>Available Datasets</h2>
+    {{ range .Pages }}
+        <div class='dataset-item'>
+            <div class='date-col'>
+                {{.Date.Format "2006-01-02"}}
+            </div>
+            <div class='title-col'>
+                <a href="{{.Permalink}}">{{.Title}}</a>
+            </div>
+        </div>
+    {{ end }}
+{{ end }}

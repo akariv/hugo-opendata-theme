@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{- partial "head.html" . -}}
+        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    </head>
+    <body>
+        <div class="content">
+        {{- partial "header.html" . -}}
+        <div class='hero'>
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        </div>
+    </body>
+</html>
