@@ -4,10 +4,10 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h3>
   <div class='dataset-fields'>
-  {{ range $elem_key, $elem_val := .Params.Fields }}
+  {{ range $elem := .Params.Fields }}
     <div class='dataset-field'>
-      <label>{{ $elem_key }}:</label>
-      <span>{{ $elem_val }}</span>
+      <label>{{ $elem[0] }}:</label>
+      <span>{{ $elem[1] }}</span>
     </div>
   {{ end }}
   </div>
