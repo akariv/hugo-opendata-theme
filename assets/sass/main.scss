@@ -78,15 +78,17 @@ html, body {
 
         .dataset-fields {
             margin: 0 20px;
+            display: flex;
+            flex-flow: column;
 
             .dataset-field {
                 line-height: 1.5;
-                min-width: 400px;
-                display: inline-block;
-                
+
                 label {
                     font-weight: normal;
                     text-transform: capitalize;
+                    min-width: 300px;
+                    display: inline-block;
                 }
                 span {
                     font-weight: bold;
