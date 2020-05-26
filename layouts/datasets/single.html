@@ -6,8 +6,8 @@
   <div class='dataset-fields'>
   {{ range $elem := .Params.Fields }}
     <div class='dataset-field'>
-      <label>{{ $elem[0] }}:</label>
-      <span>{{ $elem[1] }}</span>
+      <label>{{ index $elem 0 }}:</label>
+      <span>{{ index $elem 1 }}</span>
     </div>
   {{ end }}
   </div>
