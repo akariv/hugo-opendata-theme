@@ -89,9 +89,14 @@ html, body {
                     text-transform: capitalize;
                     min-width: 300px;
                     display: inline-block;
+                    cursor: inherit;
                 }
                 span {
                     font-weight: bold;
+                }
+                a {
+                    margin-bottom: 10px;
+                    display: inline-block;
                 }
             }
         }
