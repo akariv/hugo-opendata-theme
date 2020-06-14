@@ -4,11 +4,6 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h3>
   <div class='dataset-fields'>
-      <div class='dataset-field'>
-        <a href="{{ .Params.download_url }}" target='_blank'>
-          <label>Download Source File</label>
-        </a>
-      </div>
 
   {{ range $elem := .Params.Fields }}
     <div class='dataset-field'>
@@ -16,5 +11,12 @@
       <span>{{ index $elem 1 }}</span>
     </div>
   {{ end }}
+
+    <div class='dataset-field'>
+      <a href="{{ .Params.download_url }}" target='_blank'>
+        <label>Download Source File</label>
+      </a>
+    </div>
+
   </div>
 {{ end }}
