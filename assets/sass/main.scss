@@ -74,6 +74,20 @@ html, body {
                 flex: 0 0 auto;
                 margin-right: 20px;
             }
+
+            .source-col {
+                flex: 0 0 auto;
+                width: 150px;
+                white-space: normal;
+                margin-right: 20px;
+            }
+
+            .rowcount-col {
+                flex: 0 0 auto;
+                width: 150px;
+                white-space: nowrap;
+                margin-right: 20px;
+            }
         }
 
         .dataset-fields {
