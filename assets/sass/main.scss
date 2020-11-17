@@ -77,16 +77,18 @@ html, body {
 
             .source-col {
                 flex: 0 0 auto;
-                width: 150px;
-                white-space: normal;
+                width: 200px;
+                white-space: nowrap;
                 margin-right: 20px;
-            }
+                text-overflow: ellipsis;
+                overflow: hidden;            }
 
             .rowcount-col {
                 flex: 0 0 auto;
-                width: 150px;
+                width: 100px;
                 white-space: nowrap;
                 margin-right: 20px;
+                text-align: right;
             }
         }
 
