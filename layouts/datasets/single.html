@@ -13,6 +13,7 @@
       <span>{{ index $elem 1 }}</span>
     </div>
   {{ end }}
+  </div>
 
   <div class='dataset-fields'>
     <div class='dataset-field'>
@@ -24,12 +25,13 @@
       <span>{{ index $elem 1 }}</span>
     </div>
   {{ end }}
+  </div>
 
+  <div class='dataset-fields'>
     <div class='dataset-field'>
       <a href="{{ .Params.download_url }}" target='_blank'>
         <label>Download Source File</label>
       </a>
     </div>
-
   </div>
 {{ end }}
