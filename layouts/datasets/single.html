@@ -4,7 +4,9 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h3>
   <div class='dataset-fields'>
-
+    <div class='dataset-field'>
+      <h3>Metadata</label>
+    </div>
   {{ range $elem := .Params.Fields }}
     <div class='dataset-field'>
       <label>{{ index $elem 0 }}:</label>
