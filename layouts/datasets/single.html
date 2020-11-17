@@ -14,6 +14,17 @@
     </div>
   {{ end }}
 
+  <div class='dataset-fields'>
+    <div class='dataset-field'>
+      <h3>Statistics</label>
+    </div>
+  {{ range $elem := .Params.Statistics }}
+    <div class='dataset-field'>
+      <label>{{ index $elem 0 }}:</label>
+      <span>{{ index $elem 1 }}</span>
+    </div>
+  {{ end }}
+
     <div class='dataset-field'>
       <a href="{{ .Params.download_url }}" target='_blank'>
         <label>Download Source File</label>
