@@ -68,7 +68,6 @@ html, body {
             white-space: pre-wrap;
             font-weight: 300;
             font-size: 16px;
-            margin-bottom: 30px;
             padding: 8px 20px;
             border-left: 1px solid #888;
             margin-left: 30px;
@@ -121,6 +120,7 @@ html, body {
                     white-space: pre-line;
                 }
                 h3 {
+                    margin-top: 30px;
                     font-size: 135%;
                 }
                 a {
